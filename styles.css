@@ -1,0 +1,34 @@
+
+.container {
+    margin: 180px auto;
+    display: grid;
+    width: 420px;
+    height: 420px; 
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px; 
+}
+
+.item {
+    border: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+    background-color: #ccc; 
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+
+.item.flipped {
+    background-color: transparent;
+}
+
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; 
+}
